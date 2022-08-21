@@ -43,7 +43,7 @@ app.MapGet("/books", () =>
 })
 .WithName("GetBooks");
 
-app.MapGet("/books/{bookId}/chapter", (string bookId) =>
+app.MapGet("/books/{bookId}/chapters", (string bookId) =>
 {
 	try
 	{
@@ -66,7 +66,7 @@ app.MapGet("/books/{bookId}/chapter", (string bookId) =>
 })
 .WithName("GetChapters");
 
-app.MapGet("/books/{bookId}/chapter/{chapterId}/Verses", (string bookId, string chapterId) =>
+app.MapGet("/books/{bookId}/chapters/{chapterId}/Verses", (string bookId, string chapterId) =>
 {
 	try
 	{
